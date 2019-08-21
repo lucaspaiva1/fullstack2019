@@ -6,7 +6,7 @@
       </div>
     </div>
     <div v-else class="text-center">
-      <span class="text-muted">Nenhum Pet Econtrado!</span>
+      <span class="text-muted">Nenhum Pet Econtrado.</span>
     </div>
   </div>
 </template>

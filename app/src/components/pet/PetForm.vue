@@ -8,11 +8,12 @@
         id="name"
         placeholder="Nome do Pet"
         v-model="pet.name"
+        required
       />
     </div>
     <div class="form-group">
       <label for="gender-select">Sexo</label>
-      <select id="gender-select" class="custom-select" v-model="pet.gender">
+      <select id="gender-select" class="custom-select" v-model="pet.gender" required>
         <option :value="null" disabled>Selecione o sexo</option>
         <option value="M">Macho</option>
         <option value="F">Fêmea</option>
@@ -20,7 +21,7 @@
     </div>
     <div class="form-group">
       <label for="birthdate">Data de Nascimento</label>
-      <input type="date" class="form-control" id="birthdate" v-model="pet.born_at" />
+      <input type="date" class="form-control" id="birthdate" v-model="pet.born_at" required/>
     </div>
     <div v-if="showDiedInput" class="form-group">
       <label for="died_at">Data de Falecimento</label>
